@@ -90,10 +90,10 @@
 												<li class="list-group-item">Two</li>
 												<li class="list-group-item">Three</li>
 											</ul>
-										</div>
-									</div>';
+										</div>';
+									
 									}
-								echo '</div></div>';
+								echo '</div></div></div>';
 					
 					}
 					?>
