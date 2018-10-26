@@ -40,13 +40,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
-			<div class="col-lg-4">
+		<div class="mt-2 container-fluid">
+			<div class="col-lg-2">
 				<div class="panel-group">
-					<div class="panel panel-default">
+					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" href="#collapse1">FINANCE</a>
+								<a data-toggle="collapse" href="#collapse1">1.ด้านการเงิน</a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<ul class="list-group">
+								<li class="list-group-item">One</li>
+								<li class="list-group-item">Two</li>
+								<li class="list-group-item">Three</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel-group">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" href="#collapse1">1.ด้านการเงิน</a>
 							</h4>
 						</div>
 						<div id="collapse1" class="panel-collapse collapse">
@@ -59,7 +75,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-10">
 			</div>
 		</div>
 	</body>
