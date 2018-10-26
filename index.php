@@ -91,10 +91,10 @@
 												<li class="list-group-item">Three</li>
 											</ul>
 										</div>
-									</div>
-								</div>
-					</div>';
-					}
+									</div>';
+									}
+								echo '</div></div>';
+					
 					}
 					?>
 				</div>
