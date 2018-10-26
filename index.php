@@ -46,6 +46,11 @@
 					<?php
 						$sql_main = "SELECT * FROM tbl_topic_main";
 						$query_main = mysqli_query($conn,$sql_main);
+						
+						
+						
+						$sql_sub = "SELECT * FROM tbl_topic_sub";
+						$query_sub = mysqli_query($conn,$sql_sub);
 						$col_num = 1;
 						/*while($obj_main = mysqli_fetch_array($query_main))
 						{
@@ -65,26 +70,31 @@
 					echo '<div class="panel panel-primary">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" href="#collapse1">'.$obj_main['topic'].'</a>
+								<a data-toggle="collapse" href="#collapse'.$col_num.'">'.$obj_main['topic'].'</a>
 							</h4>
 						</div>
-						<div id="collapse1" class="panel-collapse collapse">
+						<div id="collapse'.$col_num.'" class="panel-collapse collapse">
 							<div class="panel panel-info">
 								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" href="#collapse2">1.ด้านการเงิน2</a>
-									</h4>
+									<h4 class="panel-title">';
+									$sql_sub_main = "SELECT * FROM tbl_topic_submain WHERE topic_parent ='".$obj_main["topic_num"]."'";
+									$query_submain = mysqli_query($conn,$sql_sub_main);
+									while($obj_submain = mysqli_fetch_array($query_submain))
+									{
+										echo '<a data-toggle="collapse" href="#collapse2">'.$obj_submain['topic'].'</a>
+											</h4>
+										</div>
+										<div id="collapse2" class="panel-collapse collapse">
+											<ul class="list-group">
+												<li class="list-group-item">One</li>
+												<li class="list-group-item">Two</li>
+												<li class="list-group-item">Three</li>
+											</ul>
+										</div>
+									</div>
 								</div>
-								<div id="collapse2" class="panel-collapse collapse">
-									<ul class="list-group">
-										<li class="list-group-item">One</li>
-										<li class="list-group-item">Two</li>
-										<li class="list-group-item">Three</li>
-									</ul>
-								</div>
-							</div>
-						</div>
 					</div>';
+					}
 					}
 					?>
 				</div>
