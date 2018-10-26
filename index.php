@@ -60,11 +60,12 @@
 								echo "</div>";
 							echo "</div>";	
 						}*/
-					
+					while($obj_main = mysqli_fetch_array($query_main))
+					{
 					echo '<div class="panel panel-primary">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" href="#collapse1">1.ด้านการเงิน</a>
+								<a data-toggle="collapse" href="#collapse1">'.$obj_main['topic'].'</a>
 							</h4>
 						</div>
 						<div id="collapse1" class="panel-collapse collapse">
@@ -84,6 +85,7 @@
 							</div>
 						</div>
 					</div>';
+					}
 					?>
 				</div>
 			</div>
