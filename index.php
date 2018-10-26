@@ -43,7 +43,25 @@
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-2">
 				<div class="panel-group">
-					<div class="panel panel-primary">
+					<?php
+						$sql_main = "SELECT * FROM tbl_topic_main";
+						$query_main = mysqli_query($conn,$sql_main);
+						$col_num = 1;
+						/*while($obj_main = mysqli_fetch_array($query_main))
+						{
+							echo "<div class='panel panel-primary'>";
+								echo "<div class='panel-heading'>";
+									echo "<h4 class='panel-title'>";
+										echo "<a data-toggle='collapse' href='#collapse".$col_num."'>".$obj_main["topic"]."</a>";
+									echo "</h4>";
+								echo "</div>";
+								echo "<div id='collapse".$col_num."' class='panel-collapse collapse'>";
+								
+								echo "</div>";
+							echo "</div>";	
+						}*/
+					
+					echo '<div class="panel panel-primary">
 						<div class="panel-heading">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" href="#collapse1">1.ด้านการเงิน</a>
@@ -65,7 +83,8 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>';
+					?>
 				</div>
 			</div>
 			<div class="col-lg-10">
