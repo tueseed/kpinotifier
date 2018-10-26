@@ -18,7 +18,7 @@
 			{
 				text-align:center;
 			}
-			container-fluid 
+			body 
 			{
 				font-family: 'Kanit', sans-serif;
 			}
