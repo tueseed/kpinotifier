@@ -50,7 +50,7 @@
 							</h4>
 						</div>
 						<div id="collapse1" class="panel-collapse collapse">
-							<div class="panel panel-primary">
+							<div class="panel panel-info">
 								<div class="panel-heading">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" href="#collapse2">1.ด้านการเงิน2</a>
