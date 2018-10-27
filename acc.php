@@ -78,7 +78,7 @@
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
 				<div class="col-lg-1" style="background-color:#b461fb;">
-					<button class="btn"><i class="fa fa-bars" onclick="openNav()"></i> Menu</button>
+					<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 				</div>
 				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
 					<h4>MY MONEY</h4>
