@@ -76,22 +76,14 @@
 			  <a href="#">Contact</a>
 			</div>
 		<div class="container-fluid" style="background-color:#b461fb;">
-			<div class="row">
-				<div class="col-lg-1" style="background-color:#b461fb;">
+				<div class="col-xs-1" style="background-color:#b461fb;">
 					<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				</div>
-				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
+				<div class="col-xs-4" style="background-color:#b461fb;">
 					<h4>MY MONEY</h4>
 				</div>
-			</div>
 		</div>
-		<div class="mt-2 container-fluid">
-			<div class="col-lg-2">
-				
-			</div>
-			<div class="col-lg-10">
-			</div>
-		</div>
+		
 		<script>
 			function openNav() {
 				document.getElementById("mySidenav").style.width = "250px";
