@@ -76,9 +76,9 @@
 			  <a href="#">Contact</a>
 			</div>
 		<div class="container-fluid" style="background-color:#b461fb;">
-			<div class="row row-center">
+			<div class="row">
 				<div class="col-lg-1" style="background-color:#b461fb;">
-					<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+					<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				</div>
 				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
 					<h4>MY MONEY</h4>
