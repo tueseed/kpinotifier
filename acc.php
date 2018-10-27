@@ -75,12 +75,12 @@
 			  <a href="#">Clients</a>
 			  <a href="#">Contact</a>
 			</div>
-		<div class="container-fluid" style="background-color:#b461fb;">
+		<div class="container" style="background-color:#b461fb;">
 				<div class="col-xs-1" style="background-color:#b461fb;">
-					<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+					<span style="font-size:10px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				</div>
 				<div class="col-xs-4" style="background-color:#b461fb;">
-					<h4>MY MONEY</h4>
+					<h5>MY MONEY</h5>
 				</div>
 		</div>
 		
