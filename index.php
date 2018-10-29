@@ -59,7 +59,27 @@
 										$sql_sub_main = "SELECT * FROM tbl_topic_submain WHERE topic_parent='".$obj_main["topic_num"]."'";
 										$query_submain = mysqli_query($conn,$sql_sub_main);
 										$col_num1 = 1;
-										
+										while($obj_submain = mysqli_fetch_array($query_submain))
+										{
+											echo "<div class='panel panel-info'>">;
+												echo "<div class='panel-heading'>";
+													echo "<h4 class='panel-title'>";
+														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_submain["topic"]."</a>";
+													echo "</h4>";
+												echo "</div>";
+												echo "<div id='collapsesub".$col_num1."' class='panel-collapse collapse'>";
+													$sql_sub = "SELECT * FROM tbl_topic_sub WHERE topic_parent='".$obj_submain["topic_num"]."'";
+													$query_sub = mysqli_query($conn,$sql_sub);
+													while($obj_sub = mysqli_fetch_array($query_sub))
+													{
+														echo "<ul class='list-group'>";
+															echo "<li class='list-group-item'>".$obj_sub["topic"]."</li>";
+														echo "</ul>";
+													}
+												echo "</div>";
+											echo "</div>";
+											$col_num1 = $col_num1+1;
+										}
 								echo "</div>";
 							echo "</div>";	
 							$col_num = $col_num + 1;
