@@ -87,7 +87,7 @@
 					?>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-8" id="display">
 			</div>
 		</div>
 	</body>
