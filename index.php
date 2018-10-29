@@ -61,7 +61,7 @@
 										$col_num1 = 1;
 										while($obj_submain = mysqli_fetch_array($query_submain))
 										{
-											
+											echo $obj_submain["topic"];
 										}
 								echo "</div>";
 							echo "</div>";	
