@@ -87,6 +87,9 @@
 					?>
 				</div>
 			</div>
+			<div class="col-lg-8">
+				<iframe src="demo_iframe.htm" name="display">
+			</div>
 		</div>
 	</body>
 </hmtl>
