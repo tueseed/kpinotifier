@@ -26,12 +26,24 @@
 	</head>
 	<body>
 		<div class="mt-2 container-fluid">
-				 <?php
-				  if(isset($_GET["topic"]))
-				  {
-					 echo $_GET["topic"]; 
-				  }
-				 ?>
+			<?php
+				$server = "us-cdbr-iron-east-01.cleardb.net";
+				$username = "b946a03b24557c";
+				$password = "0000fb9a";
+				$db = "heroku_91b59e978ea198b";
+				$conn = new mysqli($server, $username, $password, $db);
+				mysqli_query($conn, "SET NAMES utf8");
+				if(isset($_GET["topic"]))
+				{
+					$sql_sub_topic = "SELECT * FROM tbl_topic_sub WHERE topic_num ='".$_GET["topic"]."'";
+					$query_sub_topic = mysqli_query($conn,$sql_sub_topic);
+					$obj_sub = mysqli_fetch_array($query_sub_topic);
+				}
+			?>
+			<div class="row">
+				<h3><?php echo $obj_sub["topic_num"].".".$obj_sub["topic"];?></h3>
+			</div>
+			<div class="row">
 				<div class="table-responsive">
 					<table class="table table-hover">
 						<thead class="thead-dark">
@@ -50,6 +62,7 @@
 						</tbody>
 					</table>
 				</div>
+			</div>	
 		</div>
 	</body>
 </hmtl>

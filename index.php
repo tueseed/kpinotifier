@@ -78,7 +78,7 @@
 													while($obj_sub = mysqli_fetch_array($query_sub))
 													{
 														echo "<ul class='list-group'>";
-															echo "<a href='display.php?topic=15' target='display' class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</a>";
+															echo "<a href='display.php?topic=".$obj_sub["topic_num"]."' target='display' class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</a>";
 														echo "</ul>";
 													}
 												echo "</div>";
