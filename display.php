@@ -25,16 +25,13 @@
 		</style>
 	</head>
 	<body>
-		<div class="container-fluid" style="background-color:#b461fb;">
-			<div class="row row-center">
-				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
-					<h4>KPI-NOTIFIER</h4>
-				</div>
-			</div>
-		</div>
 		<div class="mt-2 container-fluid">
-				 <iframe src="menu.php" style="border:none;" width="30%" height="1000">
-				 <iframe src="" name="display">
+				 <?php
+				  if(isset($_GET["topic"]))
+				  {
+					 echo $_GET["topic"]; 
+				  }
+				 ?>
 		</div>
 	</body>
 </hmtl>

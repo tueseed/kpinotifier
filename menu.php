@@ -66,7 +66,7 @@
 													while($obj_sub = mysqli_fetch_array($query_sub))
 													{
 														echo "<ul class='list-group'>";
-															echo "<a href='#display?topic=15'class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</a>";
+															echo "<a href='display.php?topic=15' target='display' class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</a>";
 														echo "</ul>";
 													}
 												echo "</div>";
@@ -80,14 +80,7 @@
 					?>
 				</div>
 			</div>
-			<div class="col-lg-8" id="display">
-				<?php
-					if(isset($_GET["topic"]))
-					{
-						echo $_GET["topic"];
-					}
-				?>
-			</div>
+	
 		</div>
 	</body>
 </hmtl>
