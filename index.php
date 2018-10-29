@@ -73,7 +73,7 @@
 													while($obj_sub = mysqli_fetch_array($query_sub))
 													{
 														echo "<ul class='list-group'>";
-															echo "<li class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</li>";
+															echo "<form method='post' target='display' action='url-to-server-Page'><li class='list-group-item' type='submit' name='topic_num' value='".$obj_sub["topic_num"]."'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</li></form>";
 														echo "</ul>";
 													}
 												echo "</div>";
@@ -88,6 +88,13 @@
 				</div>
 			</div>
 			<div class="col-lg-8" id="display">
+				<?php
+					if(isset($_POST["topic_num"]))
+					{ 
+						$topic_num = $_POST["topic_num"];
+						echo $topic_num." 12318123156";
+				}
+				?>
 			</div>
 		</div>
 	</body>
