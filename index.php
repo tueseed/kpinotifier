@@ -88,7 +88,7 @@
 				</div>
 			</div>
 			<div class="col-lg-8">
-				<iframe src="demo_iframe.htm" name="display" frameborder="0" width="90%">
+				<iframe src="demo_iframe.htm" name="display" frameborder="0" width="100%">
 			</div>
 		</div>
 	</body>
