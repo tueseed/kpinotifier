@@ -61,7 +61,7 @@
 										$col_num1 = 1;
 										while($obj_submain = mysqli_fetch_array($query_submain))
 										{
-											echo "<div class='panel panel-info'>">;
+											echo "<div class='panel panel-info'>";
 												echo "<div class='panel-heading'>";
 													echo "<h4 class='panel-title'>";
 														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_submain["topic"]."</a>";
