@@ -40,7 +40,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="mt-2 container-fluid">
 			<div class="col-lg-4">
 				<div class="panel-group">
 					<?php
