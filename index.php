@@ -33,10 +33,8 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<frameset cols="25%,*">
-				 <iframe src="menu.php">
+				 <iframe src="menu.php" style="border:none;" width="99%" >
 				 <iframe>
-			</frameset>
 		</div>
 	</body>
 </hmtl>

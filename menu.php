@@ -33,14 +33,7 @@
 			$conn = new mysqli($server, $username, $password, $db);
 			mysqli_query($conn, "SET NAMES utf8");
 		?>
-		<div class="container-fluid" style="background-color:#b461fb;">
-			<div class="row row-center">
-				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
-					<h4>KPI-NOTIFIER</h4>
-				</div>
-			</div>
-		</div>
-		<div class="mt-2 container-fluid">
+		<div class="container-fluid">
 			<div class="col-lg-4">
 				<div class="panel-group">
 					<?php
