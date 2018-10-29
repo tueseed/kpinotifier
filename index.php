@@ -41,7 +41,7 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<div class="panel-group">
 					<?php
 						$sql_main = "SELECT * FROM tbl_topic_main";
@@ -87,7 +87,7 @@
 					?>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-9">
 				<iframe src="demo_iframe.htm" name="display" frameborder="0" width="100%">
 			</div>
 		</div>
