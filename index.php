@@ -56,12 +56,6 @@
 									echo "</h4>";
 								echo "</div>";
 								echo "<div id='collapse".$col_num."' class='panel-collapse collapse'>";
-										$server = "us-cdbr-iron-east-01.cleardb.net";
-										$username = "b946a03b24557c";
-										$password = "0000fb9a";
-										$db = "heroku_91b59e978ea198b";
-										$conn = new mysqli($server, $username, $password, $db);
-										mysqli_query($conn, "SET NAMES utf8");
 										$sql_sub_main = "SELECT * FROM tbl_topic_submain WHERE topic_parent='".$obj_main["topic_num"]."'";
 										$query_submain = mysqli_query($conn,$sql_sub_main);
 										$col_num1 = 1;
@@ -73,22 +67,7 @@
 														echo "<a data-toggle='collapse' href='#collapsesub'".$col_num1."'>".$obj_submain["topic"]."</a>";
 													echo "</h4>";
 												echo "</div>";
-												echo "<div id='collapsesub'".$col_num1."' class='panel-collapse collapse'>";
-													$server = "us-cdbr-iron-east-01.cleardb.net";
-													$username = "b946a03b24557c";
-													$password = "0000fb9a";
-													$db = "heroku_91b59e978ea198b";
-													$conn = new mysqli($server, $username, $password, $db);
-													mysqli_query($conn, "SET NAMES utf8");
-													$sql_sub = "SELECT * FROM tbl_topic_sub WHERE topic_parent='".$obj_submain["topic_num"]."'";
-													$query_sub = mysqli_query($conn,$sql_sub);
-													while($obj_sub = mysqli_fetch_array($query_sub))
-													{
-														echo "<ul class='list-group'>";
-															echo "<li class='list-group-item'>".$obj_sub["topic"]."</li>";
-														echo "</ul>";
-													}
-												echo "</div>";
+												
 											echo "</div>";
 											$col_num1 = $col_num1+1;
 										}
