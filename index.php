@@ -52,7 +52,7 @@
 							echo "<div class='panel panel-primary'>";
 								echo "<div class='panel-heading'>";
 									echo "<h4 class='panel-title'>";
-										echo "<a data-toggle='collapse' href='#collapse".$col_num."'>".$obj_main["topic"]."</a>";
+										echo "<a data-toggle='collapse' href='#collapse".$col_num."'>".$obj_main["topic_num"].".".$obj_main["topic"]."</a>";
 									echo "</h4>";
 								echo "</div>";
 								echo "<div id='collapse".$col_num."' class='panel-collapse collapse'>";
@@ -64,7 +64,7 @@
 											echo "<div class='panel panel-info'>";
 												echo "<div class='panel-heading'>";
 													echo "<h4 class='panel-title'>";
-														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_submain["topic"]."</a>";
+														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_sub["topic_num"].".".$obj_submain["topic"]."</a>";
 													echo "</h4>";
 												echo "</div>";
 												echo "<div id='collapsesub".$col_num1."' class='panel-collapse collapse'>";
@@ -73,7 +73,7 @@
 													while($obj_sub = mysqli_fetch_array($query_sub))
 													{
 														echo "<ul class='list-group'>";
-															echo "<li class='list-group-item'>".$obj_sub["topic"]."</li>";
+															echo "<li class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</li>";
 														echo "</ul>";
 													}
 												echo "</div>";
