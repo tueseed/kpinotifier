@@ -87,8 +87,8 @@
 					?>
 				</div>
 			</div>
-			<div class="col-lg-8" id="display">
-				<iframe name="display">
+			<div class="col-lg-8" id="display" name="display">
+				
 				<?php
 					if(isset($_POST["topic_num"]))
 					{ 
@@ -96,7 +96,7 @@
 						echo $topic_num." 12318123156";
 				}
 				?>
-				</iframe>
+				
 			</div>
 		</div>
 	</body>
