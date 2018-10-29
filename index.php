@@ -41,7 +41,7 @@
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
 				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
-					<h4>KPI-NOTIFIER</h4>
+					<h1>KPi-</h1>
 				</div>
 			</div>
 		</div>
@@ -93,7 +93,7 @@
 				</div>
 			</div>
 			<div class="col-lg-9">
-				<iframe src="demo_iframe.htm" name="display" frameborder="0" width="100%">
+				<iframe src="demo_iframe.htm" name="display" frameborder="1" width="100%">
 			</div>
 		</div>
 	</body>
