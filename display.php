@@ -32,6 +32,24 @@
 					 echo $_GET["topic"]; 
 				  }
 				 ?>
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead class="thead-dark">
+							<tr>
+								<th scope="col">การไฟฟ้า</th>
+								<th scope="col">เป้า</th>
+								<th scope="col">ผล</th>								 
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>กฟอ.พธร.</td><td>100</td><td>100</td></tr>
+							<tr><td>กฟอ.พธร.</td><td>100</td><td>100</td></tr>
+							<tr><td>กฟอ.พธร.</td><td>100</td><td>100</td></tr>
+							<tr><td>กฟอ.พธร.</td><td>100</td><td>100</td></tr>
+							<tr><td>กฟอ.พธร.</td><td>100</td><td>100</td></tr>
+						</tbody>
+					</table>
+				</div>
 		</div>
 	</body>
 </hmtl>
