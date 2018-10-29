@@ -25,14 +25,6 @@
 		</style>
 	</head>
 	<body>
-		<?php
-			$server = "us-cdbr-iron-east-01.cleardb.net";
-			$username = "b946a03b24557c";
-			$password = "0000fb9a";
-			$db = "heroku_91b59e978ea198b";
-			$conn = new mysqli($server, $username, $password, $db);
-			mysqli_query($conn, "SET NAMES utf8");
-		?>
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
 				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
@@ -41,60 +33,10 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<div class="col-lg-4">
-				<div class="panel-group">
-					<?php
-						$sql_main = "SELECT * FROM tbl_topic_main";
-						$query_main = mysqli_query($conn,$sql_main);
-						$col_num = 1;
-						while($obj_main = mysqli_fetch_array($query_main))
-						{
-							echo "<div class='panel panel-primary'>";
-								echo "<div class='panel-heading'>";
-									echo "<h4 class='panel-title'>";
-										echo "<a data-toggle='collapse' href='#collapse".$col_num."'>".$obj_main["topic_num"].".".$obj_main["topic"]."</a>";
-									echo "</h4>";
-								echo "</div>";
-								echo "<div id='collapse".$col_num."' class='panel-collapse collapse'>";
-										$sql_sub_main = "SELECT * FROM tbl_topic_submain WHERE topic_parent='".$obj_main["topic_num"]."'";
-										$query_submain = mysqli_query($conn,$sql_sub_main);
-										$col_num1 = 1;
-										while($obj_submain = mysqli_fetch_array($query_submain))
-										{
-											echo "<div class='panel panel-info'>";
-												echo "<div class='panel-heading'>";
-													echo "<h4 class='panel-title'>";
-														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_submain["topic_num"].".".$obj_submain["topic"]."</a>";
-													echo "</h4>";
-												echo "</div>";
-												echo "<div id='collapsesub".$col_num1."' class='panel-collapse collapse'>";
-													$sql_sub = "SELECT * FROM tbl_topic_sub WHERE topic_parent='".$obj_submain["topic_num"]."'";
-													$query_sub = mysqli_query($conn,$sql_sub);
-													while($obj_sub = mysqli_fetch_array($query_sub))
-													{
-														echo "<ul class='list-group'>";
-															echo "<a href='#display?topic=15'class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</a>";
-														echo "</ul>";
-													}
-												echo "</div>";
-											echo "</div>";
-											$col_num1 = $col_num1 + 1;
-										}
-								echo "</div>";
-							echo "</div>";	
-							$col_num = $col_num + 1;
-						}	
-					?>
-				</div>
-			</div>
-			<div class="col-lg-8" id="display">
-				<?php
-					if(isset($_GET["topic"]))
-					{
-						echo $_GET["topic"];
-					}
-				?>
-			</div>
+			<frameset cols="25%,*">
+				 <frame src="menu.php">
+				 <frame>
+			</frameset>
 		</div>
 	</body>
 </hmtl>
