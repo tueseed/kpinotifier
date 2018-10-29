@@ -34,8 +34,8 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<frameset cols="25%,*">
-				 <frame src="menu.php">
-				 <frame>
+				 <iframe src="menu.php">
+				 <iframe>
 			</frameset>
 		</div>
 	</body>
