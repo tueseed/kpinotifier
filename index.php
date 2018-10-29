@@ -74,7 +74,7 @@
 													{
 														echo "<ul class='list-group'>";
 															echo "<li class='list-group-item'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</li>";
-														echo "</div>";
+														echo "</ul>";
 													}
 												echo "</div>";
 											echo "</div>";
@@ -87,16 +87,7 @@
 					?>
 				</div>
 			</div>
-			<div class="col-lg-8" id="display" name="display">
-				
-				<?php
-					if(isset($_POST["topic_num"]))
-					{ 
-						$topic_num = $_POST["topic_num"];
-						echo $topic_num." 12318123156";
-				}
-				?>
-				
+			<div class="col-lg-8">
 			</div>
 		</div>
 	</body>
