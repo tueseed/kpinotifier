@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-				 <iframe src="menu.php" style="border:none;" width="99%" >
+				 <iframe src="menu.php" style="border:none;" width="30%" hight="99%">
 				 <iframe>
 		</div>
 	</body>
