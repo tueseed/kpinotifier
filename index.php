@@ -61,14 +61,14 @@
 										$col_num1 = 1;
 										while($obj_submain = mysqli_fetch_array($query_submain))
 										{
-											echo $obj_submain["topic"];
-													$sql_sub = "SELECT * FROM tbl_topic_sub WHERE topic_parent='".$obj_submain["topic_num"]."'";
-													$query_sub = mysqli_query($conn,$sql_sub);
-													while($obj_sub = mysqli_fetch_array($query_sub))
-													{
-														echo $obj_sub["topic"];
-													}
+											echo "<div class='panel panel-info'>">;
+												echo "<div class='panel-heading'>";
+													echo "<h4 class='panel-title'>";
+														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_submain["topic"]."</a>";
+													echo "</h4>";
+												echo "</div>";
 												
+											echo "</div>";
 											$col_num1 = $col_num1+1;
 										}
 								echo "</div>";
