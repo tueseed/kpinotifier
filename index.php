@@ -73,7 +73,7 @@
 													while($obj_sub = mysqli_fetch_array($query_sub))
 													{
 														echo "<div class='btn-group btn-group-lg'>";
-															echo "<form method='post' target='display' action='url-to-server-Page'><button class='btn btn-primary' type='submit' name='topic_num' value='".$obj_sub["topic_num"]."'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</li></form>";
+															echo "<form method='post' target='display' action='index.php'><button class='btn btn-primary' type='submit' name='topic_num' value='".$obj_sub["topic_num"]."'>".$obj_sub["topic_num"].".".$obj_sub["topic"]."</li></form>";
 														echo "</div>";
 													}
 												echo "</div>";
