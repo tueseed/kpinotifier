@@ -41,7 +41,7 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<div class="col-lg-2">
+			<div class="col-lg-4">
 				<div class="panel-group">
 					<?php
 						$sql_main = "SELECT * FROM tbl_topic_main";
@@ -64,7 +64,7 @@
 											echo "<div class='panel panel-info'>";
 												echo "<div class='panel-heading'>";
 													echo "<h4 class='panel-title'>";
-														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_sub["topic_num"].".".$obj_submain["topic"]."</a>";
+														echo "<a data-toggle='collapse' href='#collapsesub".$col_num1."'>".$obj_submain["topic_num"].".".$obj_submain["topic"]."</a>";
 													echo "</h4>";
 												echo "</div>";
 												echo "<div id='collapsesub".$col_num1."' class='panel-collapse collapse'>";
@@ -87,7 +87,7 @@
 					?>
 				</div>
 			</div>
-			<div class="col-lg-10">
+			<div class="col-lg-8">
 			</div>
 		</div>
 	</body>
