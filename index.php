@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style type="text/css">
 			.row-center
 			{
@@ -90,6 +91,14 @@
 							$col_num = $col_num + 1;
 						}	
 					?>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="modal" href="#addtopic">เพิ่มรายการ</a>
+								<i class="fa fa-plus-square"></i>
+							</h4>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-9">
