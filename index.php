@@ -122,6 +122,8 @@
 											?>
 											<option value="add_new">เพิ่มหัวข้อใหม่</option>
 										</select>
+									</div>
+									<div class="form-group">
 										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
 									</div>
 								</div>
