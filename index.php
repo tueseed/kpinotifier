@@ -100,31 +100,29 @@
 						</div>
 					</div>
 					<div class="modal fade" id="addtopic" role="dialog">
-						<div class="modal-dialog">
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<h4 class="modal-title">เพิ่มหัวข้อการประเมิน</h4>
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-								</div>
-								<div class="modal-body">
-									<div class="form-group">  
-										<label for="topic_main">หัวข้อหลัก</label> 
-										<select class="form-control">
-											<option>asdasdasd</option>
-											<option>asdasdasd</option>
-											<option>asdasdasd</option>
-											<option>asdasdasd</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
-									</div>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">ตกลง</button>
-								</div>
+						<div class="modal-dialog modal-sm">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Modal Header</h4>
 							</div>
+							<div class="modal-body">
+							<div class="form-group">
+							  <select class="form-control">
+								<option>asdasdasd</option>
+								<option>asdasdasd</option>
+								<option>asdasdasd</option>
+								<option>asdasdasd</option>
+							  </select>
+							  </div>
+							  <div class="form-group">
+								 <input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+							  </div>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
 						</div>
 					</div>
 				</div>
