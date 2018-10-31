@@ -110,7 +110,7 @@
 								<div class="modal-body">
 									<div class="form-group">  
 										<label for="topic_main">หัวข้อหลัก</label> 
-										<select class="selectpicker" id="topic_main" name="topic_main">
+										<select class="form-control" id="topic_main" name="topic_main">
 											<option>เลือกหัวข้อหลัก</option>
 											<?php
 												$sql_topic_main = "SELECT * FROM tbl_topic_main";
