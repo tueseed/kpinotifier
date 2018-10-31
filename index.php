@@ -110,17 +110,11 @@
 								<div class="modal-body">
 									<div class="form-group">  
 										<label for="topic_main">หัวข้อหลัก</label> 
-										<select class="form-control" id="topic_main" name="topic_main">
-											<option>เลือกหัวข้อหลัก</option>
-											<?php
-												$sql_topic_main = "SELECT * FROM tbl_topic_main";
-												$query_topic_main = mysqli_query($conn,$sql_topic_main);
-												while($obj_topic_main = mysqli_fetch_array($query_topic_main))
-												{
-													echo "<option value='".$obj_topic_main["topic"]."'>".$obj_topic_main["topic"]."</option>";
-												}
-											?>
-											<option value="add_new">เพิ่มหัวข้อใหม่</option>
+										<select class="form-control">
+											<option>asdasdasd</option>
+											<option>asdasdasd</option>
+											<option>asdasdasd</option>
+											<option>asdasdasd</option>
 										</select>
 									</div>
 									<div class="form-group">
