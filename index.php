@@ -100,29 +100,37 @@
 						</div>
 					</div>
 					<div class="modal fade" id="addtopic" role="dialog">
-						<div class="modal-dialog modal-sm">
-						  <div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal">&times;</button>
-							  <h4 class="modal-title">Modal Header</h4>
+						<div class="modal-dialog">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">เพิ่มหัวข้อการประเมิน</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">  
+										<label for="topic_main">หัวข้อหลัก</label> 
+										<select class="form-control" id="topic_main" name="topic_main">
+											<option>เลือกหัวข้อหลัก</option>
+											<?php
+												$sql_topic_main = "SELECT * FROM tbl_topic_main";
+												$query_topic_main = mysqli_query($conn,$sql_topic_main);
+												while($obj_topic_main = mysqli_fetch_array($query_topic_main))
+												{
+													echo "<option value='".$obj_topic_main["topic"]."'>".$obj_topic_main["topic"]."</option>";
+												}
+											?>
+											<option value="add_new">เพิ่มหัวข้อใหม่</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">ตกลง</button>
+								</div>
 							</div>
-							<div class="modal-body">
-							<div class="form-group">
-							  <select class="form-control">
-								<option>asdasdasd</option>
-								<option>asdasdasd</option>
-								<option>asdasdasd</option>
-								<option>asdasdasd</option>
-							  </select>
-							  </div>
-							  <div class="form-group">
-								 <input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
-							  </div>
-							</div>
-							<div class="modal-footer">
-							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-						  </div>
 						</div>
 					</div>
 				</div>
