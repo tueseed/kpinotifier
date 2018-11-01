@@ -110,7 +110,7 @@
 								<div class="modal-body">
 									<div class="form-group">  
 										<label for="topic_main">หัวข้อหลัก</label> 
-										<select class="form-control" id="topic_main" name="topic_main">
+										<select class="form-control input-lg" id="topic_main" name="topic_main">
 											<option>เลือกหัวข้อหลัก</option>
 											<?php
 												$sql_topic_main = "SELECT * FROM tbl_topic_main";
@@ -123,7 +123,18 @@
 											<option value="add_new">เพิ่มหัวข้อใหม่</option>
 										</select>
 									</div>
-									
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-default" data-dismiss="modal">ตกลง</button>
