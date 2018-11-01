@@ -145,6 +145,18 @@
 				</div>
 			</div>
 			<div class="col-lg-9">
+			<select class="form-control" id="topic_main" name="topic_main">
+											<option>เลือกหัวข้อหลัก</option>
+											<?php
+												$sql_topic_main = "SELECT * FROM tbl_topic_main";
+												$query_topic_main = mysqli_query($conn,$sql_topic_main);
+												while($obj_topic_main = mysqli_fetch_array($query_topic_main))
+												{
+													echo "<option value='".$obj_topic_main["topic"]."'>".$obj_topic_main["topic"]."</option>";
+												}
+											?>
+											<option value="add_new">เพิ่มหัวข้อใหม่</option>
+										</select>
 				<iframe src="demo_iframe.htm" name="display" frameborder="0" width="100%">
 			</div>
 		</div>
