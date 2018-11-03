@@ -12,6 +12,6 @@
 			while($obj = mysqli_fetch_array($query))
 			{
 				echo $a.".".$obj["office"]."<br>";
-				$a=a+1;
+				$a=$a+1;
 			}
 ?>
