@@ -11,7 +11,8 @@
 			$a=1;
 			while($obj = mysqli_fetch_array($query))
 			{
-				echo $a.".".$obj["office"]."<br>";
-				$a=$a+1;
+				$data = $data.$obj["office"]." ".$obj["detail"]." ".$obj["detail"]." ".$obj["wbs"]." ".$obj["no"]." ".$obj["approval"];;
 			}
+			echo strlen($data)."<br>";
+			echo $data;
 ?>
