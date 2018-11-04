@@ -5,7 +5,7 @@
 			$db = "heroku_5663ecc9ac15f3e";
 			$conn = new mysqli($server, $username, $password, $db);
 			mysqli_query($conn, "SET NAMES UTF8");
-			$data = "โพธา";
+			$data = "โพธ";
 			$sql = "SELECT * FROM tbl_improve WHERE detail LIKE '%".$data."%'";
 			$query = mysqli_query($conn,$sql);
 			$a=1;
