@@ -8,6 +8,6 @@
 	$recive = $_POST["data"];
 	$sql_submain = "SELECT * FROM tbl_topic_submain WHERE topic_parent = '".$recive."'";
 	$query_submain = mysqli_query($conn,$sql_submain);
-	
-	echo $recive;
+	$res = mysqli_fetch_array($query_submain);
+	echo $res;
 ?>
