@@ -58,8 +58,8 @@
                     processData: false,
                     contentType: false,
                     success: function(response) {
-						var obj = JSON.parse(response);
-                        alert(obj[1].topic);
+						var obj = JSON.stringify(response);
+                        alert(obj);
                     }
                     
                 });
