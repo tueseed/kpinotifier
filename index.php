@@ -122,7 +122,7 @@
 												$query_topic_main = mysqli_query($conn,$sql_topic_main);
 												while($obj_topic_main = mysqli_fetch_array($query_topic_main))
 												{
-													echo "<option value='".$obj_topic_main["topic"]."'>".$obj_topic_main["topic"]."</option>";
+													echo "<option value='".$obj_topic_main["topic_num"]."'>".$obj_topic_main["topic"]."</option>";
 												}
 											?>
 											<option value="add_new">เพิ่มหัวข้อใหม่</option>
