@@ -161,13 +161,13 @@
 									</div>
 									<div class="form-group">
 										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
-									</div class="form-group">
+									</div>
+									<div class="form-group">
 										<label for="topic_main">หัวข้อย่อย 1</label> 
 										<select class="form-control form-control-lg" id="topic_submain" name="topic_submain">
 											<option>เลือกหัวข้อย่อย 1</option>
 											<option value="add_new">เพิ่มหัวข้อใหม่</option>
 										</select>
-									<div>
 									</div>
 									<div class="form-group">
 										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
@@ -180,7 +180,7 @@
 									</div>
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">ตกลง</button>
+									<button type="submit" class="btn btn-default" data-dismiss="modal">ตกลง</button>
 								</div>
 							</div>
 						</div>
