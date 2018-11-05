@@ -36,6 +36,14 @@
 		</style>
 	</head>
 	<body>
+		<?php
+			$server = "us-cdbr-iron-east-01.cleardb.net";
+			$username = "b946a03b24557c";
+			$password = "0000fb9a";
+			$db = "heroku_91b59e978ea198b";
+			$conn = new mysqli($server, $username, $password, $db);
+			mysqli_query($conn, "SET NAMES utf8");
+		?>
 		<script>
 			function send(data)
 			{
@@ -66,13 +74,17 @@
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-3">
 				<select name="wire" id="wire" class="wire" onchange="send(this.value)">
-                                <option value="N/A">สาย</option>
-                                <option value="319">50 PIC</option>
-                                <option value="322">120 PIC</option>
-                                <option value="323">185 PIC</option>
-                                <option value="332">50 SAC</option>
-                                <option value="336">185 SAC</option>
-                            </select><!--สาย-->
+                    <option>เลือกหัวข้อหลัก</option>
+						<?php
+							$sql_topic_main = "SELECT * FROM tbl_topic_main";
+							$query_topic_main = mysqli_query($conn,$sql_topic_main);
+							while($obj_topic_main = mysqli_fetch_array($query_topic_main))
+								{
+									echo "<option value='".$obj_topic_main["topic_num"]."'>".$obj_topic_main["topic"]."</option>";
+								}
+						?>
+					<option value="add_new">เพิ่มหัวข้อใหม่</option>
+                </select><!--สาย-->
 			</div>
 			<div class="col-lg-9">
 				
