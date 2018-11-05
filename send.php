@@ -64,7 +64,7 @@
 						var i = 1;
                         //alert(obj[1].topic);
 						
-						while(obj[i].topic)
+						while(obj[i])
 						{
 							opt1.Options[i] = new Option(obj[i].topic,obj[i].topic);
 							i++;
@@ -96,7 +96,7 @@
 					<option value="add_new">เพิ่มหัวข้อใหม่</option>
                 </select><!--สาย-->
 				<select name="sub_main" id="sub_main">
-					
+					<option>หัวข้อย่อย</option>
 				</select>
 			</div>
 			<div class="col-lg-9">
