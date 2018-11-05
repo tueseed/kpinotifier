@@ -115,7 +115,7 @@
 								<div class="modal-body">
 									<div class="form-group">  
 										<label for="topic_main">หัวข้อหลัก</label> 
-										<select class="form-control form-control-lg" id="topic_main" name="topic_main">
+										<select class="form-control form-control-lg" id="topic_main" name="topic_main" onchange="send(this.value)">
 											<option>เลือกหัวข้อหลัก</option>
 											<?php
 												$sql_topic_main = "SELECT * FROM tbl_topic_main";
@@ -130,6 +130,13 @@
 									</div>
 									<div class="form-group">
 										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div class="form-group">
+										<label for="topic_main">หัวข้อย่อย 1</label> 
+										<select class="form-control form-control-lg" id="topic_submain" name="topic_submain">
+											<option>เลือกหัวข้อย่อย 1</option>
+											<option value="add_new">เพิ่มหัวข้อใหม่</option>
+										</select>
+									<div>
 									</div>
 									<div class="form-group">
 										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
@@ -153,5 +160,36 @@
 				<iframe src="demo_iframe.htm" name="display" frameborder="0" width="100%">
 			</div>
 		</div>
+		<script>
+			function send(data)
+			{
+				var formData = new FormData();
+				formData.append('data', data);
+				$.ajax({
+                    url: 'recive.php',
+                    method: 'POST',
+                    data: formData,
+                    async: true,
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+						var opt1 = document.getElementById("topic_submain");
+						opt1.options.length = 0;
+						var obj = jQuery.parseJSON(response);
+						var i = 0;
+                        alert(obj[1].topic);
+						opt1.options[0] = new Option("เลือกหัวข้อย่อย 1","เลือกหัวข้อย่อย 1");
+						while(obj[i].topic)
+						{
+							opt1.options[i] = new Option(obj[i].topic,obj[i].topic);
+							i++;
+						}
+						opt1.options[i+1] = new Option("เพิ่มหัวข้อใหม่","เพิ่มหัวข้อใหม่ 1");
+                    }
+                    
+                });
+			}
+		</script>
 	</body>
 </hmtl>
