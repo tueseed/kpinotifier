@@ -105,6 +105,37 @@
 						</div>
 					</div>
 					<div class="modal fade" id="addtopic" role="dialog">
+						<script>
+							function send(data)
+							{
+								var formData = new FormData();
+								formData.append('data', data);
+								$.ajax({
+									url: 'recive.php',
+									method: 'POST',
+									data: formData,
+									async: true,
+									cache: false,
+									processData: false,
+									contentType: false,
+									success: function(response) {
+										var opt1 = document.getElementById("topic_submain");
+										opt1.options.length = 0;
+										var obj = jQuery.parseJSON(response);
+										var i = 0;
+										alert(obj[1].topic);
+										opt1.options[0] = new Option("เลือกหัวข้อย่อย 111111","เลือกหัวข้อย่อย 11111");
+										while(obj[i].topic)
+										{
+											opt1.options[i] = new Option(obj[i].topic,obj[i].topic);
+											i++;
+										}
+										opt1.options[i+1] = new Option("เพิ่มหัวข้อใหม่","เพิ่มหัวข้อใหม่ 1");
+									}
+									
+								});
+							}
+						</script>
 						<div class="modal-dialog modal-lg">
 							<!-- Modal content-->
 							<div class="modal-content">
@@ -160,36 +191,5 @@
 				<iframe src="demo_iframe.htm" name="display" frameborder="0" width="100%">
 			</div>
 		</div>
-		<script>
-			function send(data)
-			{
-				var formData = new FormData();
-				formData.append('data', data);
-				$.ajax({
-                    url: 'recive.php',
-                    method: 'POST',
-                    data: formData,
-                    async: true,
-                    cache: false,
-                    processData: false,
-                    contentType: false,
-                    success: function(response) {
-						var opt1 = document.getElementById("topic_submain");
-						opt1.options.length = 0;
-						var obj = jQuery.parseJSON(response);
-						var i = 0;
-                        alert(obj[1].topic);
-						opt1.options[0] = new Option("เลือกหัวข้อย่อย 111111","เลือกหัวข้อย่อย 11111");
-						while(obj[i].topic)
-						{
-							opt1.options[i] = new Option(obj[i].topic,obj[i].topic);
-							i++;
-						}
-						opt1.options[i+1] = new Option("เพิ่มหัวข้อใหม่","เพิ่มหัวข้อใหม่ 1");
-                    }
-                    
-                });
-			}
-		</script>
 	</body>
 </hmtl>
