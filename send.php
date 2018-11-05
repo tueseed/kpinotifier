@@ -59,7 +59,7 @@
                     contentType: false,
                     success: function(response) {
 						var obj = jQuery.parseJSON(response);
-                        alert(obj[0].topic);
+                        alert(obj[1].topic);
                     }
                     
                 });
