@@ -58,8 +58,17 @@
                     processData: false,
                     contentType: false,
                     success: function(response) {
+						var opt1 = document.getElementById("sub_main");
+						opt1.options.length = 0;
 						var obj = jQuery.parseJSON(response);
-                        alert(obj[1].topic);
+						var i = 1;
+                        //alert(obj[1].topic);
+						
+						while(obj[i].topic)
+						{
+							opt1.Options[i] = new Option(obj[i].topic,obj[i].topic);
+							i++;
+						}
                     }
                     
                 });
@@ -86,6 +95,9 @@
 						?>
 					<option value="add_new">เพิ่มหัวข้อใหม่</option>
                 </select><!--สาย-->
+				<select name="sub_main" id="sub_main">
+					
+				</select>
 			</div>
 			<div class="col-lg-9">
 				
