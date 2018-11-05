@@ -62,13 +62,13 @@
 						opt1.options.length = 0;
 						var obj = jQuery.parseJSON(response);
 						var i = 0;
-                        //alert(obj[1].topic);
+                        alert(obj[1].topic);
 						opt1.Options[0] = new Option("หัวข้อย่อย","หัวข้อย่อย");
-						while(obj[i].topic)
+						/*while(obj[i].topic)
 						{
 							opt1.Options[i] = new Option(obj[i].topic,obj[i].topic);
 							i++;
-						}
+						}*/
                     }
                     
                 });
