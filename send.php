@@ -64,11 +64,11 @@
 						var i = 0;
                         alert(obj[1].topic);
 						opt1.options[0] = new Option("หัวข้อย่อย","หัวข้อย่อย");
-						/*while(obj[i].topic)
+						while(obj[i].topic)
 						{
-							opt1.Options[i] = new Option(obj[i].topic,obj[i].topic);
+							opt1.options[i] = new Option(obj[i].topic,obj[i].topic);
 							i++;
-						}*/
+						}
                     }
                     
                 });
