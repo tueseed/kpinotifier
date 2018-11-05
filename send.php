@@ -59,12 +59,7 @@
                     contentType: false,
                     success: function(response) {
 						var obj = JSON.parse(response);
-						while(obj[i])
-						{
-							var obj1 = obj1 + obj.topic;
-							i++;
-						}
-                        alert(obj1);
+                        alert(obj[0]);
                     }
                     
                 });
