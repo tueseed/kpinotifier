@@ -9,5 +9,5 @@
 	$sql_submain = "SELECT * FROM tbl_topic_submain WHERE topic_parent = '".$recive."'";
 	$query_submain = mysqli_query($conn,$sql_submain);
 	$res = mysqli_fetch_array($query_submain);
-	echo $res;
+	echo json_encode($res);
 ?>
