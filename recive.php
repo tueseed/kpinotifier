@@ -9,7 +9,7 @@
 	$sql_submain = "SELECT * FROM tbl_topic_submain WHERE topic_parent = '".$recive."'";
 	$query_submain = mysqli_query($conn,$sql_submain);
 	$result = array();
-	while($res = mysqli_fetch_array($conn,$query_submain))
+	while($res = mysqli_fetch_array($query_submain))
 	{
 		array_push($result,$res);
 	}
