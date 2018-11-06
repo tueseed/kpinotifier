@@ -123,7 +123,7 @@
 										opt1.options.length = 0;
 										var obj = jQuery.parseJSON(response);
 										var i = 0;
-										alert(obj[1].topic);
+										//alert(obj[1].topic);
 										opt1.options[0] = new Option("เลือกหัวข้อย่อย 111111","เลือกหัวข้อย่อย 11111");
 										while(obj[i].topic)
 										{
@@ -148,14 +148,14 @@
 										<label for="topic_main">หัวข้อหลัก</label> 
 										<select class="form-control form-control-lg" id="topic_main" name="topic_main" onchange="send(this.value)">
 											<option>เลือกหัวข้อหลัก</option>
-											<?php
-												$sql_topic_main = "SELECT * FROM tbl_topic_main";
-												$query_topic_main = mysqli_query($conn,$sql_topic_main);
-												while($obj_topic_main = mysqli_fetch_array($query_topic_main))
-												{
-													echo "<option value='".$obj_topic_main["topic_num"]."'>".$obj_topic_main["topic"]."</option>";
-												}
-											?>
+												<?php
+													$sql_topic_main = "SELECT * FROM tbl_topic_main";
+													$query_topic_main = mysqli_query($conn,$sql_topic_main);
+													while($obj_topic_main = mysqli_fetch_array($query_topic_main))
+													{
+														echo "<option value='".$obj_topic_main["topic_num"]."'>".$obj_topic_main["topic"]."</option>";
+													}
+												?>
 											<option value="add_new">เพิ่มหัวข้อใหม่</option>
 										</select>
 									</div>
