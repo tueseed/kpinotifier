@@ -125,11 +125,11 @@
 										var i = 0;
 										//alert(obj[1].topic);
 										opt1.options[0] = new Option('เลือกหัวข้อย่อย 1','เลือกหัวข้อย่อย 1');
-										/*while(obj[i].topic)
+										while(obj[i].topic)
 										{
 											opt1.options[i] = new Option(obj[i].topic,obj[i].topic);
 											i++;
-										}*/
+										}
 										opt1.options[1] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
 									}
 									
