@@ -24,7 +24,7 @@ function send(data)
 							i++;
 							var a = i;
 						}
-						opt1.options[i+2] = new Option('asdasda','sadadsd');
+						opt1.options[i+3] = new Option('asdasda','sadadsd');
 					}				
 			});
 }
