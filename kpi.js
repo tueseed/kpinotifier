@@ -23,7 +23,7 @@ function send(data)
 							opt1.options[i+1] = new Option(obj[i].topic,obj[i].topic);
 							i++;
 						}
-						opt1.options[i] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
+						opt1.options[i+1] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
 					}				
 			});
 }
