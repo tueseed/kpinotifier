@@ -20,11 +20,11 @@ function send(data)
 						opt1.options[0] = new Option('เลือกหัวข้อย่อย 1','เลือกหัวข้อย่อย 1');
 						while(obj[i].topic)
 						{
-							opt1.options[i+1] = new Option(obj[i].topic,obj[i].topic);
+							opt1.options[i+1] = new Option(i+" "+int(i+1),obj[i].topic);
 							i++;
 							var a = i;
 						}
-						opt1.options[i+3] = new Option('asdasda','sadadsd');
+						opt1.options[3] = new Option('asdasda','sadadsd');
 					}				
 			});
 }
