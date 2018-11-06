@@ -130,7 +130,7 @@
 											opt1.options[i] = new Option(obj[i].topic,obj[i].topic);
 											i++;
 										}*/
-										opt1.options[i+1] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
+										opt1.options[1] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
 									}
 									
 								});
@@ -165,8 +165,7 @@
 									<div class="form-group">
 										<label for="topic_main">หัวข้อย่อย 1</label> 
 										<select class="form-control form-control-lg" id="topic_submain" name="topic_submain">
-											<option>เลือกหัวข้อย่อย 1</option>
-											<option value="add_new">เพิ่มหัวข้อใหม่</option>
+											
 										</select>
 									</div>
 									<div class="form-group">
