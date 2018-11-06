@@ -15,10 +15,9 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="kpi.js"></script>
 		<style type="text/css">
 			.row-center
 			{
@@ -35,6 +34,8 @@
 			}
 		</style>
 	</head>
+	<script>
+	</script>
 	<body>
 		<?php
 			$server = "us-cdbr-iron-east-01.cleardb.net";
@@ -105,37 +106,7 @@
 						</div>
 					</div>
 					<div class="modal fade" id="addtopic" role="dialog">
-						<script>
-							function send(data)
-							{
-								var formData = new FormData();
-								formData.append('data', data);
-								$.ajax({
-									url: 'recive.php',
-									method: 'POST',
-									data: formData,
-									async: true,
-									cache: false,
-									processData: false,
-									contentType: false,
-									success: function(response) {
-										var opt1 = document.getElementById("topic_submain");
-										opt1.options.length = 0;
-										var obj = jQuery.parseJSON(response);
-										var i = 0;
-										//alert(obj[1].topic);
-										opt1.options[0] = new Option('เลือกหัวข้อย่อย 1','เลือกหัวข้อย่อย 1');
-										while(obj[i].topic)
-										{
-											opt1.options[i+1] = new Option(obj[i].topic,obj[i].topic);
-											i++;
-										}
-										//opt1.options[i] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
-									}
-									
-								});
-							}
-						</script>
+						<script src="kpi.js"></script>
 						<div class="modal-dialog modal-lg">
 							<!-- Modal content-->
 							<div class="modal-content">
