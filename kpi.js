@@ -22,8 +22,9 @@ function send(data)
 						{
 							opt1.options[i+1] = new Option(obj[i].topic,obj[i].topic);
 							i++;
+							var a = i;
 						}
-						opt1.options[i+2] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
+						opt1.options[a+1] = new Option('เพิ่มหัวข้อใหม่','เพิ่มหัวข้อใหม่');
 					}				
 			});
 }
