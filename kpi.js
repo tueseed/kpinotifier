@@ -18,13 +18,15 @@ function send(data)
 						var i = 0;
 						//alert(obj[1].topic);
 						opt1.options[0] = new Option('เลือกหัวข้อย่อย 1','เลือกหัวข้อย่อย 1');
-						while(obj[i].topic)
+						/*while(obj[i].topic)
 						{
 							opt1.options[i+1] = new Option(obj[i].topic,obj[i].topic);
 							i++;
 							var a = i;
-						}
-						opt1.options[3] = new Option('asdasda','sadadsd');
+						}*/
+						opt1.options[1] = new Option('1','1');
+						opt1.options[2] = new Option('2','2');
+						opt1.options[3] = new Option('3','3');
 					}				
 			});
 }
