@@ -85,15 +85,9 @@
 			</div>
 			<div class="col-lg-4">
 				<p>สถานะงาน</p>
-				<label class="radio-inline">
-					<input type="radio" name="optradio" checked>REL
-				</label>
-				<label class="radio-inline">
-					<input type="radio" name="optradio">TECO
-				</label>
-				<label class="radio-inline">
-					<input type="radio" name="optradio">CLSD
-				</label>	
+				<label class="checkbox-inline"><input type="checkbox" value="">REL</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">TECO</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">CLSD</label>	
 			</div>
 		</div>
 	</body>
