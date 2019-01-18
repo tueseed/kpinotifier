@@ -87,9 +87,11 @@
 				</div>
 				<div class="row">
 					<p>สถานะงาน</p>
-					<label class="checkbox"><input type="checkbox" value="">REL</label>
-					<label class="checkbox"><input type="checkbox" value="">TECO</label>
-					<label class="checkbox"><input type="checkbox" value="">CLSD</label>
+					<form>
+						<label class="checkbox"><input type="checkbox" value="">REL</label>
+						<label class="checkbox"><input type="checkbox" value="">TECO</label>
+						<label class="checkbox"><input type="checkbox" value="">CLSD</label>
+					</form>
 				</div>
 			</div>
 		</div>
