@@ -77,8 +77,11 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-4">
-			<p>ค่าใช้จ่าย : <span id="demo"></span> %</p>
-			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">	
+				<p>ค่าใช้จ่าย : <span id="demo"></span> %</p>
+				<input type="range" min="1" max="100" value="50" class="slider" id="myRange">	
+			</div><div class="col-lg-4">
+				<p>จำนวนวัน </p>
+				<input type="text" class="form-control" >	
 			</div>
 		</div>
 	</body>
