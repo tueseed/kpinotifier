@@ -86,7 +86,7 @@
 					<input type="text" class="form-control" >
 				</div>
 				<div class="row mt-2">
-					<p>สถานะงาน </p>
+					<p>สถานะงาน   </p>
 					<form>
 						<label class="checkbox-inline"><input type="checkbox" value="">REL</label>
 						<label class="checkbox-inline"><input type="checkbox" value="">TECO</label>
@@ -94,7 +94,7 @@
 					</form>
 				</div>
 				<div class="row row-center mt-2">
-					<input type="button" class="btn btn-success" value="ค้นหา">
+					<input type="button" class="btn btn-success btn-block" value="ค้นหา">
 				</div>
 			</div>
 		</div>
