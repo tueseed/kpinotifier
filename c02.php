@@ -83,7 +83,7 @@
 				<p>จำนวนวัน </p>
 				<input type="text" class="form-control" >	
 			</div>
-			</div><div class="col-lg-4">
+			<div class="col-lg-4">
 				<p>สถานะงาน</p>
 				<label class="radio-inline">
 					<input type="radio" name="optradio" checked>REL
