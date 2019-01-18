@@ -76,18 +76,21 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<div class="col-lg-4">
-				<p>ค่าใช้จ่าย : <span id="demo"></span> %</p>
-				<input type="range" min="1" max="100" value="50" class="slider" id="myRange">	
-			</div><div class="col-lg-4">
-				<p>จำนวนวัน </p>
-				<input type="text" class="form-control" >	
-			</div>
-			<div class="col-lg-4">
-				<p>สถานะงาน</p>
-				<label class="checkbox-inline"><input type="checkbox" value="">REL</label>
-				<label class="checkbox-inline"><input type="checkbox" value="">TECO</label>
-				<label class="checkbox-inline"><input type="checkbox" value="">CLSD</label>	
+			<div class="col-lg-4 offset-lg-4">
+				<div class="row">
+					<p>ค่าใช้จ่าย : <span id="demo"></span> %</p>
+					<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+				</div>
+				<div class="row">
+					<p>จำนวนวัน </p>
+					<input type="text" class="form-control" >
+				</div>
+				<div class="row">
+					<p>สถานะงาน</p>
+					<label class="checkbox"><input type="checkbox" value="">REL</label>
+					<label class="checkbox"><input type="checkbox" value="">TECO</label>
+					<label class="checkbox"><input type="checkbox" value="">CLSD</label>
+				</div>
 			</div>
 		</div>
 	</body>
