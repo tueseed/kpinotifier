@@ -1,13 +1,13 @@
 function search()
 {
-	var percent = document.getElementById("myRange").checked;
+	var percent = document.getElementById("myRange").value;
 	var date_num = document.getElementById("myRange").checked;
 	var chkrel = document.getElementById("chkrel").checked;
 	var chkrel = document.getElementById("chkrel").checked;
 	var chkrel = document.getElementById("chkrel").checked;
 	alert(percent);
 	/*$.ajax({
-			url: 'c02.php',
+			url: 'c02query.php',
 			method: 'POST',
 			async: true,
 			cache: false,
