@@ -77,16 +77,16 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-4 offset-lg-4">
-				<div class="row">
+				<div class="row mt-2">
 					<p>ค่าใช้จ่าย : <span id="demo"></span> %</p>
 					<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 				</div>
-				<div class="row">
+				<div class="row mt-2">
 					<p>จำนวนวัน </p>
 					<input type="text" class="form-control" >
 				</div>
-				<div class="row">
-					<p>สถานะงาน</p>
+				<div class="row mt-2">
+					<p>สถานะงาน </p>
 					<form>
 						<label class="checkbox-inline"><input type="checkbox" value="">REL</label>
 						<label class="checkbox-inline"><input type="checkbox" value="">TECO</label>
