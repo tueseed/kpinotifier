@@ -104,6 +104,32 @@
 				</div>
 			</div>
 		</div>
+		<div class="mt-2 container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">WBS</th>
+									<th scope="col">วันที่ชำระเงิน</th>
+									<th scope="col">จำนวนวัน</th>
+									<th scope="col">Pln.คชจ.</th>
+									<th scope="col">Act.คชจ.</th>
+									<th scope="col">%.คชจ.</th>
+									<th scope="col">สถานะงาน</th>
+								</tr>
+							</thead>
+							<tbody id="tbl">
+								<tr>
+									<!--DATA FROM FIRE BASE-->
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script>
 		var slider = document.getElementById("myRange");
