@@ -88,10 +88,13 @@
 				<div class="row mt-2">
 					<p>สถานะงาน </p>
 					<form>
-						<label class="checkbox"><input type="checkbox" value="">REL</label>
+						<label class="checkbox-inline"><input type="checkbox" value="">REL</label>
 						<label class="checkbox-inline"><input type="checkbox" value="">TECO</label>
 						<label class="checkbox-inline"><input type="checkbox" value="">CLSD</label>
 					</form>
+				</div>
+				<div class="row row-center mt-2">
+					<input type="button" class="btn btn-success" value="ค้นหา">
 				</div>
 			</div>
 		</div>
