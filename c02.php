@@ -75,7 +75,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="mt-2 container-fluid">
+		<div class="mt-2 container-fluid well">
 			<div class="col-lg-4 offset-lg-4">
 				<div class="row mt-2">
 					<p>ค่าใช้จ่าย : <span id="demo"></span> %</p>
