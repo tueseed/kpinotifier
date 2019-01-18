@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="kpi.js"></script>
+		<script src="c02.js"></script>
 		<style type="text/css">
 			.row-center
 			{
@@ -83,24 +83,24 @@
 				</div>
 				<div class="row mt-2">
 					<p>จำนวนวัน </p>
-					<input type="text" class="form-control" >
+					<input type="text" class="form-control" id="date_num">
 				</div>
 				<div class="row mt-2">
 					<p>สถานะงาน : </p>
 					<form>
 						<label class="checkbox-inline">
-							<input type="checkbox" value="">REL
+							<input type="checkbox" value="" id="chkrel">REL
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" value="">TECO
+							<input type="checkbox" value="" id="chkteco">TECO
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" value="">CLSD
+							<input type="checkbox" value="" id="chkclsd">CLSD
 						</label>
 					</form>
 				</div>
 				<div class="row row-center mt-2">
-					<input type="button" class="btn btn-success btn-block" value="ค้นหา">
+					<input type="button" class="btn btn-success btn-block" value="ค้นหา" onclick="search()">
 				</div>
 			</div>
 		</div>
@@ -135,7 +135,6 @@
 		var slider = document.getElementById("myRange");
 		var output = document.getElementById("demo");
 		output.innerHTML = slider.value;
-
 		slider.oninput = function() 
 		{
 		  output.innerHTML = this.value;
