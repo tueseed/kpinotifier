@@ -77,7 +77,7 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-4">
-			<p>ค่าใช้จ่าย : % <span id="demo"></span></p>
+			<p>ค่าใช้จ่าย : <span id="demo"></span> %</p>
 			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">	
 			</div>
 		</div>
@@ -85,7 +85,7 @@
 	<script>
 		var slider = document.getElementById("myRange");
 		var output = document.getElementById("demo");
-		output.innerHTML = "ค่าใช้จ่าย :" + slider.value + "%";
+		output.innerHTML = slider.value;
 
 		slider.oninput = function() 
 		{
