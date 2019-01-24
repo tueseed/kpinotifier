@@ -9,6 +9,6 @@
 	$query = mysqli_query($conn,$sql_text);
 	while($obj = mysqli_fetch_array($query))
 	{
-		echo $obj["pea"];
+		echo $obj["kva"]."ttttt";
 	}
 ?>
